@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  schedule:
+    # 日本時間で毎晩20:38にテスト実行
+    - cron: '38 11 * * *'
 
 defaults:
   run:
