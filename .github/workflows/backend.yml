@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'backend/**'
+      - '.github/**'
   schedule:
     # 日本時間で毎晩20:45にテスト実行
     - cron: '45 11 * * *'
